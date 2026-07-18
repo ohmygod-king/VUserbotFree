@@ -1,0 +1,14 @@
+{
+  "name": "vogue-userbot",
+  "version": "1.0.0",
+  "description": "Vogue Userbot Free",
+  "main": "Vogue.js",
+  "scripts": {
+    "start": "node Vogue.js",
+    "dev": "node --watch Vogue.js"
+  },
+  "dependencies": {
+    "xzcgram": "^0.0.7",
+    "chalk": "^4.1.2"
+  }
+}
