@@ -20,13 +20,6 @@ module.exports = {
   
   botToken: "",
   
-  loginOptions: {
-    phoneNumber: async () => ask("Masukkan nomor telepon (contoh +628xxxx): "),
-    password: async () => ask("Masukkan password 2FA (kosongkan jika tidak ada): "),
-    phoneCode: async () => ask("Masukkan kode OTP dari Telegram: "),
-    onError: (err) => console.error("[Login Error]", err.message || err),
-  },
-  
   botName: "Vogue Userbot",
   prefix: ".",
   version: "1.0.0",
