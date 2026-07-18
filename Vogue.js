@@ -1,5 +1,6 @@
 const { clientStart } = require("xzcgram");
 const Config = require("./Config");
+const Login = require("./Handlers/Login");
 
 const Loader = require("./Handlers/Loader");
 const CommandRegistry = require("./Handlers/CommandRegistry");
@@ -28,7 +29,7 @@ async function main() {
     sessionType: Config.sessionType,
     session: Config.session,
     sessionName: Config.sessionName,
-    loginOptions: Config.botToken ? undefined : Config.loginOptions,
+    loginOptions: Config.botToken ? undefined : Login.buildLoginOptions(),
   });
   
   if (sessionString) {
